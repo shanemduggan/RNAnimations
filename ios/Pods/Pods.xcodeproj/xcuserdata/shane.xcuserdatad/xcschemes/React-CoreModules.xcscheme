@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "53054C9E9FE18695AB0D0F85B9485BE2"
+               BlueprintIdentifier = "E16E206437995280D349D4B67695C894"
+               BuildableName = "libReact-CoreModules.a"
                BlueprintName = "React-CoreModules"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libReact-CoreModules.a">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

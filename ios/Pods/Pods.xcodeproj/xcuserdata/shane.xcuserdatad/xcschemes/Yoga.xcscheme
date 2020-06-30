@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9FF754AF97012BED71F275BE68E0CBD1"
+               BlueprintIdentifier = "2B25F90D819B9ADF2AF2D8733A890333"
+               BuildableName = "libYoga.a"
                BlueprintName = "Yoga"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libYoga.a">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

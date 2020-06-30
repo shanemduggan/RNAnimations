@@ -9,7 +9,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>CocoaLibEvent.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>DoubleConversion.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FBLazyVector.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -59,6 +69,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>OpenSSL-Universal.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-RNAnimations-RNAnimationsTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -79,6 +94,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>RCTRequired.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>RCTTypeSafety.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -90,6 +110,11 @@
 			<false/>
 		</dict>
 		<key>React-CoreModules.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>React-RCTActionSheet.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -154,6 +179,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>React.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>ReactCommon.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -165,6 +195,11 @@
 			<false/>
 		</dict>
 		<key>YogaKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>boost-for-react-native.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

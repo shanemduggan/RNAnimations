@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CFA66F7878FF4C6E8A72556ABE58BF15"
+               BlueprintIdentifier = "5EE961E197FFB374E05B7714F0D424F5"
+               BuildableName = "libPods-RNAnimations-RNAnimationsTests.a"
                BlueprintName = "Pods-RNAnimations-RNAnimationsTests"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libPods-RNAnimations-RNAnimationsTests.a">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

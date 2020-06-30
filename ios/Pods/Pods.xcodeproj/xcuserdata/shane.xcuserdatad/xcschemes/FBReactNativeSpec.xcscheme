@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "7511B09EB145175AD63C51D1FC7E4BCF"
+               BlueprintIdentifier = "C3496D0495E700CF08A90C41EA8FA4BB"
+               BuildableName = "libFBReactNativeSpec.a"
                BlueprintName = "FBReactNativeSpec"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libFBReactNativeSpec.a">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

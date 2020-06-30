@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E52251C888D5C79AB222169B1B1102C1"
+               BlueprintIdentifier = "95D98F901D07557EF7CA38D3F03832C5"
+               BuildableName = "libReact-RCTBlob.a"
                BlueprintName = "React-RCTBlob"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libReact-RCTBlob.a">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

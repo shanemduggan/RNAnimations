@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "13D239AFEA64E5B8B4E779A23E008ED5"
+               BlueprintIdentifier = "DBD2D83E10F8B7D3F4E0E34E6A9FCFA6"
+               BuildableName = "libReact-RCTText.a"
                BlueprintName = "React-RCTText"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libReact-RCTText.a">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

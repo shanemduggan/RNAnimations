@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A072F1CB8B3FB5356E13E57AB256CC56"
+               BlueprintIdentifier = "B6D39E083AE0FF45BA30D7CDF6198A03"
+               BuildableName = "libFlipper-Folly.a"
                BlueprintName = "Flipper-Folly"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libFlipper-Folly.a">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

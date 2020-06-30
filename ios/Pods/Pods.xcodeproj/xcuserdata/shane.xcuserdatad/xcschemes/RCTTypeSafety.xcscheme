@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "93A2FF3986BDF8DF3597B3D076226ABB"
+               BlueprintIdentifier = "D20469A9A1E5CFB26045EAEBE3F88E5E"
+               BuildableName = "libRCTTypeSafety.a"
                BlueprintName = "RCTTypeSafety"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libRCTTypeSafety.a">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

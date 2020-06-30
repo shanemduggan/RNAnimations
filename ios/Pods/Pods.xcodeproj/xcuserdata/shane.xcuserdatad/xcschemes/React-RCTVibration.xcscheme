@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "73D7377035B9FD8CE9FD779CD4C243D2"
+               BlueprintIdentifier = "53D121F9F9BB0F8AC1C94A12C5A8572F"
+               BuildableName = "libReact-RCTVibration.a"
                BlueprintName = "React-RCTVibration"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libReact-RCTVibration.a">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

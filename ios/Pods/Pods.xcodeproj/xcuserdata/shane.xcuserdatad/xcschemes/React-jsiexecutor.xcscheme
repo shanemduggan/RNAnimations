@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FD9512DD662D11B3A57D4108552A5D70"
+               BlueprintIdentifier = "DA0709CAAD589C6E7963495210438021"
+               BuildableName = "libReact-jsiexecutor.a"
                BlueprintName = "React-jsiexecutor"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libReact-jsiexecutor.a">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
