@@ -24,12 +24,15 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+import Animations from './screens/FirstAnimation';
+
 const App: () => React$Node = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
-        <ScrollView
+        <Animations />
+       {/*  <ScrollView
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}>
           <Header />
@@ -66,7 +69,7 @@ const App: () => React$Node = () => {
             </View>
             <LearnMoreLinks />
           </View>
-        </ScrollView>
+        </ScrollView> */}
       </SafeAreaView>
     </>
   );
