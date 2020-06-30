@@ -1,0 +1,1 @@
+https://gitlab.com/codedaily/reactnativeanimations/-/blob/timingOpacity/index.js
