@@ -59,6 +59,15 @@ export default class App extends Component {
     });
   };
 
+  // TODO: create another example with bounds around PanResponder
+  /*
+  
+    You can use the onLayout callback from any component to then define your layout constraints for your PanResponder. 
+    You could position things off screen then drag them on screen by triggering an Animated value while your current view 
+    stays touchable.
+  
+  */
+
   render() {
     return (
       <View style={styles.container} {...this._panResponder.panHandlers}>
