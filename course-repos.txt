@@ -1,1 +1,10 @@
 https://gitlab.com/codedaily/reactnativeanimations/-/blob/timingOpacity/index.js
+
+
+
+https://gitlab.com/codedaily/reactnativeanimations/tree/mixedExtrapolate
+
+
+
+Parent PanResponder touch (good example of PanResponder usage)
+https://github.com/browniefed/react-native-parent-panresponder-touch
