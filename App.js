@@ -25,7 +25,8 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 import Animations from './screens/FirstAnimation';
-import PanResponderUsage from './screens/PanResponderUsage';
+//import PanResponderUsage from './screens/PanResponderUsage';
+// import BoundPanResponder from './screens/BoundPanResponder';
 
 const App: () => React$Node = () => {
 
@@ -35,9 +36,11 @@ const App: () => React$Node = () => {
     <View style={styles.container}>
       {/* <StatusBar barStyle="dark-content" />
       <SafeAreaView> */}
-        {/* <Animations /> */}
+        <Animations />
  
-        <PanResponderUsage />
+        {/* <PanResponderUsage /> */}
+
+        {/* <BoundPanResponder /> */}
 
       {/* </SafeAreaView> */}
     </View>
