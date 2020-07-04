@@ -28,6 +28,10 @@ import Animations from './screens/FirstAnimation';
 //import PanResponderUsage from './screens/PanResponderUsage';
 // import BoundPanResponder from './screens/BoundPanResponder';
 
+import FourCorners from './screens/class/FourCorners';
+
+// TODO: add navigation and screen with links. each screen should have back button
+
 const App: () => React$Node = () => {
 
   // global.HermesInteral (Engine: Hermes)
@@ -36,7 +40,9 @@ const App: () => React$Node = () => {
     <View style={styles.container}>
       {/* <StatusBar barStyle="dark-content" />
       <SafeAreaView> */}
-        <Animations />
+        {/* <Animations /> */}
+
+        <FourCorners />
  
         {/* <PanResponderUsage /> */}
 

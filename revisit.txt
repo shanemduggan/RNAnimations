@@ -6,5 +6,7 @@ Section 9: Understanding How Animated
 Section 10: Animated Techniques 
 
     .99 Cliff Explanation
+    Animate Hidden Explanation
+
 
 
