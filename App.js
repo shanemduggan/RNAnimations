@@ -6,6 +6,8 @@
  * @flow strict-local
  */
 
+import 'react-native-gesture-handler';
+
 import React from 'react';
 import {
   SafeAreaView,
@@ -16,13 +18,10 @@ import {
   StatusBar,
 } from 'react-native';
 
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+
+const Stack = createStackNavigator();
 
 import Animations from './screens/FirstAnimation';
 //import PanResponderUsage from './screens/PanResponderUsage';
@@ -36,20 +35,37 @@ const App: () => React$Node = () => {
 
   // global.HermesInteral (Engine: Hermes)
 
-  return (
-    <View style={styles.container}>
+  /*
+    // <View style={styles.container}>
       {/* <StatusBar barStyle="dark-content" />
-      <SafeAreaView> */}
-        {/* <Animations /> */}
+      <SafeAreaView>
+        // {/* <Animations />
 
-        <FourCorners />
+       // {/* <FourCorners /> 
  
-        {/* <PanResponderUsage /> */}
+       // {/* <PanResponderUsage /> 
 
-        {/* <BoundPanResponder /> */}
+       // {/* <BoundPanResponder /> 
 
-      {/* </SafeAreaView> */}
-    </View>
+     // {/* </SafeAreaView> 
+    {/* </View> 
+
+    */
+
+  return (
+
+    <NavigationContainer>
+    {/* Rest of your app code */}
+    <Stack.Navigator>
+        <Stack.Screen
+          name="Home"
+          //component={Home}
+          component={FourCorners}
+          options={{ title: 'Welcome' }}
+        />
+        {/* <Stack.Screen name="Profile" component={Profile} /> */}
+      </Stack.Navigator>
+  </NavigationContainer>
   );
 };
 
