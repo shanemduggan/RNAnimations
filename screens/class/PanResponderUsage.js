@@ -59,6 +59,8 @@ export default class App extends Component {
     });
   };
 
+  // TODO: debug this and comment
+
   // TODO: create another example with bounds around PanResponder
   /*
   
