@@ -8,7 +8,7 @@ import {
 
 const isOutofBounds = (e, gestureState) => {
 
-    const { moveX, moveY, x0, y0, dx, dy, vx, vy } = gestureState;
+    let { moveX, moveY, x0, y0, dx, dy, vx, vy } = gestureState;
     //console.log(gestureState);
 
     /*
@@ -38,15 +38,19 @@ vy: 0
 
     // TODO: need to clean this up (what needs to happen here?)
 
-    const maxMoveX = 100 - e.nativeEvent.locationX;
+    //const maxMoveX = 100 - e.nativeEvent.locationX;
 
-    const maxMoveY = 100 - e.nativeEvent.locationY;
+    //const maxMoveY = 100 - e.nativeEvent.locationY;
 
-    // const isInBox = moveX > 0 && moveX < 100 && moveY < 100 && moveY > 0;
+    moveX = moveX + e.nativeEvent.locationX;
+
+    const isInBox = moveX > 0 && moveX < 100 && moveY < 100 && moveY > 0;
 
    // const isInBox = moveX > 0 && moveX < maxMoveX && moveY < maxMoveY && moveY > 0;
 
-    const isInBox = moveX > 0 && moveX < maxMoveX;
+    //const isInBox = moveX > 0 && moveX < maxMoveX;
+
+    //const isInBox = moveX > 0 && (moveX + e.nativeEvent.location) < 100;
 
 
     console.log(isInBox);
