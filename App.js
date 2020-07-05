@@ -9,6 +9,7 @@ import Home from './screens/Home';
 
 import FourCorners from './screens/class/FourCorners';
 import PanResponderUsage from './screens/class/PanResponderUsage';
+import StaggeredHeads from './screens/class/StaggeredHeads';
 
 // TODO: add navigation and screen with links. each screen should have back button
 
@@ -32,10 +33,9 @@ function App() {
           />
           <Stack.Screen name='FourCorners' component={FourCorners} />
           <Stack.Screen name='PanResponderUsage' component={PanResponderUsage} />
-
+          <Stack.Screen name='StaggeredHeads' component={StaggeredHeads} />
 
           {/* // TODO: figure out which ones to keep and add to stack
-          <Stack.Screen name='StaggeredHeads' component={StaggeredHeads} />
           <Stack.Screen name='BoundPanResponder' component={BoundPanResponder} />
           <Stack.Screen name='CardFlip' component={CardFlip} />
           <Stack.Screen name='FirstAnimation' component={FirstAnimation} />

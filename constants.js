@@ -1,6 +1,7 @@
 const animations = [
     'FourCorners',
-    'PanResponderUsage'
+    'PanResponderUsage',
+    'StaggeredHeads'
 ]
 
 export { animations }
