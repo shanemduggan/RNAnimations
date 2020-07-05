@@ -11,7 +11,7 @@ import Deena from '../../assets/deena.jpg';
 import James from '../../assets/james.jpg';
 import Jordan from '../../assets/jordan.jpg';
 
-export default class StaggeredHeads extends Component {
+class StaggeredHeads extends Component {
   state = {
     heads: [
       {
@@ -106,3 +106,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   }
 });
+
+export default StaggeredHeads
