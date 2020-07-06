@@ -3,7 +3,8 @@ const animations = [
     'PanResponderUsage',
     'StaggeredHeads',
     'KittenCards',
-    'StaggerFormItems'
+    'StaggerFormItems',
+    'AnimatedProgressBar'
 ]
 
 export { animations }

@@ -69,7 +69,7 @@ class StaggerFormItems extends Component {
             resizeMode='cover'
             style={styles.image}
         >
-        <View style={styles.container}>
+            <View style={styles.container} />
             <KeyboardAvoidingView style={styles.form} behavior='padding'>
                 <View style={styles.container}>
                     <Text style={styles.title}>Login</Text>
@@ -93,7 +93,6 @@ class StaggerFormItems extends Component {
                     </TouchableOpacity>
                 </View>
             </KeyboardAvoidingView>
-            </View>
             <View style={styles.container} />
         </ImageBackground>
       </View>
