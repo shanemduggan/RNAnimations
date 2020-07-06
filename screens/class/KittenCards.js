@@ -13,6 +13,9 @@ import clamp from 'clamp';
 
 // TODO: get cat images
 
+// TODO: re-implement with react-native-gesture-handler, react-native-reanimated,
+//       or react-spring
+
 import Brooke from '../../assets/brooke.jpg';
 import Deena from '../../assets/deena.jpg';
 import James from '../../assets/james.jpg';

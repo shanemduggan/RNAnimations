@@ -2,7 +2,8 @@ const animations = [
     'FourCorners',
     'PanResponderUsage',
     'StaggeredHeads',
-    'KittenCards'
+    'KittenCards',
+    'StaggerFormItems'
 ]
 
 export { animations }
