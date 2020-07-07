@@ -4,7 +4,8 @@ const animations = [
     'StaggeredHeads',
     'KittenCards',
     'StaggerFormItems',
-    'AnimatedProgressBar'
+    'AnimatedProgressBar',
+    'DynamicAnimatedNotifications'
 ]
 
 export { animations }
