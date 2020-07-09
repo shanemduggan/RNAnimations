@@ -7,6 +7,7 @@ const Stack = createStackNavigator();
 
 import Home from './screens/Home';
 
+// class animations
 import FourCorners from './screens/class/FourCorners';
 import PanResponderUsage from './screens/class/PanResponderUsage';
 import StaggeredHeads from './screens/class/StaggeredHeads';
@@ -14,6 +15,8 @@ import KittenCards from './screens/class/KittenCards';
 import StaggerFormItems from './screens/class/StaggerFormItems';
 import AnimatedProgressBar from './screens/class/AnimatedProgressBar';
 import DynamicAnimatedNotifications from './screens/class/DynamicAnimatedNotifications';
+import AnimatedQuestionnaire from './screens/class/AnimatedQuestionnaire';
+import PhotoGridSharedElement from './screens/class/PhotoGridSharedElement';
 
 // TODO: add navigation and screen with links. each screen should have back button
 
@@ -42,6 +45,8 @@ function App() {
           <Stack.Screen name='StaggerFormItems' component={StaggerFormItems} />
           <Stack.Screen name='AnimatedProgressBar' component={AnimatedProgressBar} />
           <Stack.Screen name='DynamicAnimatedNotifications' component={DynamicAnimatedNotifications} />
+          <Stack.Screen name='AnimatedQuestionnaire' component={AnimatedQuestionnaire} />
+          <Stack.Screen name='PhotoGridSharedElement' component={PhotoGridSharedElement} />
 
           {/* // TODO: figure out which ones to keep and add to stack
           <Stack.Screen name='BoundPanResponder' component={BoundPanResponder} />

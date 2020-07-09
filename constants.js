@@ -5,7 +5,9 @@ const animations = [
     'KittenCards',
     'StaggerFormItems',
     'AnimatedProgressBar',
-    'DynamicAnimatedNotifications'
+    'DynamicAnimatedNotifications',
+    'AnimatedQuestionnaire',
+    'PhotoGridSharedElement'
 ]
 
 export { animations }
