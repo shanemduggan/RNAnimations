@@ -8,7 +8,7 @@ class Home extends Component {
   render() {
     return (
       <View style={styles.container}>
-        { animations.map((name) => <Link text={name} screen={name} />)}
+        { animations.map((name) => <Link key={name} text={name} screen={name} />)}
       </View>
     );
   }
