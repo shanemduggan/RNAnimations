@@ -7,7 +7,8 @@ const animations = [
     'AnimatedProgressBar',
     'DynamicAnimatedNotifications',
     'AnimatedQuestionnaire',
-    'PhotoGridSharedElement'
+    'PhotoGridSharedElement',
+    'AnimatedColorPicker'
 ]
 
 export { animations }

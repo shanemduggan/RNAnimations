@@ -29,14 +29,20 @@ class PhotoGridSharedElement extends Component {
     this._gridImages = {};
   }
 
+  // TODO: glitchy on images past initial scroll
+  //       if greater than page height, use pageX?
   handleOpenImage = (index) => {
     this._gridImages[index].measure((x, y, width, height, pageX, pageY) => {
       this._x = x;
       this._y = y;
+      //this._x = pageX;
+      //this._y = pageY;
       this._width = width;
       this._height = height;
 
       this.state.position.setValue({
+        //x: pageX,
+        //y: pageY
         x,
         y
       });
@@ -53,10 +59,14 @@ class PhotoGridSharedElement extends Component {
         this._viewImage.measure((tX, tY, tWidth, tHeight, tPageX, tPageY) => {
           Animated.parallel([
             Animated.spring(this.state.position.x, {
-              toValue: tX
+              toValue: 0
+             //toValue: tX
+             //toValue: tPageX
             }),
             Animated.spring(this.state.position.y, {
-              toValue: tY
+              toValue: 0
+             //toValue: tY
+             //toValue: tPageY
             }),
             Animated.spring(this.state.size.x, {
               toValue: tWidth

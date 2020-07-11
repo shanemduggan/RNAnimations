@@ -17,6 +17,7 @@ import AnimatedProgressBar from './screens/class/AnimatedProgressBar';
 import DynamicAnimatedNotifications from './screens/class/DynamicAnimatedNotifications';
 import AnimatedQuestionnaire from './screens/class/AnimatedQuestionnaire';
 import PhotoGridSharedElement from './screens/class/PhotoGridSharedElement';
+import AnimatedColorPicker from './screens/class/AnimatedColorPicker';
 
 // TODO: add navigation and screen with links. each screen should have back button
 
@@ -47,6 +48,7 @@ function App() {
           <Stack.Screen name='DynamicAnimatedNotifications' component={DynamicAnimatedNotifications} />
           <Stack.Screen name='AnimatedQuestionnaire' component={AnimatedQuestionnaire} />
           <Stack.Screen name='PhotoGridSharedElement' component={PhotoGridSharedElement} />
+          <Stack.Screen name='AnimatedColorPicker' component={AnimatedColorPicker} />
 
           {/* // TODO: figure out which ones to keep and add to stack
           <Stack.Screen name='BoundPanResponder' component={BoundPanResponder} />
