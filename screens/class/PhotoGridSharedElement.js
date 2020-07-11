@@ -31,14 +31,14 @@ class PhotoGridSharedElement extends Component {
 
   handleOpenImage = (index) => {
     this._gridImages[index].measure((x, y, width, height, pageX, pageY) => {
-      this._x = pageX;
-      this._y = pageY;
+      this._x = x;
+      this._y = y;
       this._width = width;
       this._height = height;
 
       this.state.position.setValue({
-        x: pageX,
-        y: pageY
+        x,
+        y
       });
 
       this.state.size.setValue({
@@ -53,11 +53,9 @@ class PhotoGridSharedElement extends Component {
         this._viewImage.measure((tX, tY, tWidth, tHeight, tPageX, tPageY) => {
           Animated.parallel([
             Animated.spring(this.state.position.x, {
-            //  toValue: tPageX,
               toValue: tX
             }),
             Animated.spring(this.state.position.y, {
-            //  toValue: tPageY
               toValue: tY
             }),
             Animated.spring(this.state.size.x, {
@@ -75,7 +73,6 @@ class PhotoGridSharedElement extends Component {
     });
   }
 
-  // TODO: there's something wrong with the this._y & this._x
   handleClose = () => {
     Animated.parallel([
       Animated.timing(this.state.position.x, {
