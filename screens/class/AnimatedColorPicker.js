@@ -88,6 +88,16 @@ class AnimatedColorPicker extends Component {
       ]
     }
 
+    const colorRowInterpolate = this.state.buttonAnimation.interpolate({
+      inputRange: [0, 0.01],
+      outputRange: [0, 1],
+      extrapolate: "clamp",
+    });
+ 
+    const colorRowStyles = {
+      opacity: colorRowInterpolate,
+    };
+
     const inputOpacityInterpolate = this.state.buttonAnimation.interpolate({
       inputRange: [0, .8, 1],
       outputRange: [0, 0, 1]
@@ -142,7 +152,7 @@ class AnimatedColorPicker extends Component {
             </TouchableOpacity>
 
             <Animated.View
-              style={[StyleSheet.absoluteFill, styles.colorRowWrap]}
+              style={[StyleSheet.absoluteFill, styles.colorRowWrap, colorRowStyles]}
               pointerEvents={this.state.inputOpen ? 'auto' : 'none'}
             >
               <AnimatedTextInput
