@@ -8,7 +8,9 @@ const animations = [
     'DynamicAnimatedNotifications',
     'AnimatedQuestionnaire',
     'PhotoGridSharedElement',
-    'AnimatedColorPicker'
+    'AnimatedColorPicker',
+    'FloatingActionButton',
+    'ApplicationIntro'
 ]
 
 export { animations }
