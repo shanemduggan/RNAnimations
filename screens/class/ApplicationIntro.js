@@ -3,18 +3,16 @@ import {
   StyleSheet,
   View,
   Animated,
-  PanResponder,
-  ScrollView,
   Dimensions,
-  Image,
   Text,
   PixelRatio
 } from "react-native";
 
+import Swiper from 'react-native-swiper';
+
 import * as Images from '../../assets/appintro/images';
 
 const getScreen1Styles = (animation, width) => {
-
   const image2TranslateX = animation.interpolate({
     inputRange: [0, width],
     outputRange: [0, -100],
@@ -109,10 +107,8 @@ class ApplicationIntro extends Component {
 
     return (
       <View style={styles.container}>
-        <ScrollView
-          style={styles.container}
-          pagingEnabled
-          horizontal
+        <Swiper
+          loop={false}
           scrollEventThrottle={16}
           onScroll={Animated.event(
             [{ nativeEvent: { contentOffset: { x: this.state.animation } } }],
@@ -244,7 +240,7 @@ class ApplicationIntro extends Component {
               <Text>Screen 3</Text>
             </View>
           </View>
-        </ScrollView>
+        </Swiper>
       </View>
     );
   }
