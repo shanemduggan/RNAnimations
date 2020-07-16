@@ -14,20 +14,79 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 class EvolvingWriteButton extends Component {
   state = {
-    animation: new Animated.Value(0)
+    animation: new Animated.Value(0),
+    isOpen: false
+  }
+
+  onPress = () => {
+    const toValue = this._open ? 0 : 1;
+
+    Animated.timing(this.state.animation, {
+      toValue,
+      duration: 750
+    }).start((() => {
+      this._open ? this._input.blur() : this._input.focus();
+
+      this._open = !this._open;
+      this.setState({ isOpen: this._open });
+    }));
   }
 
   render() {
-
     const { width } = Dimensions.get('window');
 
+    const widthInterpolate = this.state.animation.interpolate({
+      inputRange: [0, .5],
+      outputRange: [100, width - 40],
+      extrapolate: 'clamp'
+    });
+
+    const editorStyle = {
+      width: widthInterpolate
+    };
+
+    const opacityToolbarInterpolate = this.state.animation.interpolate({
+      inputRange: [0, .5],
+      outputRange: [0, 1],
+      extrapolate: 'clamp'
+    });
+
+    const toolbarStyles = {
+      opacity: opacityToolbarInterpolate
+    };
+
+    const editorHeightInterpolate = this.state.animation.interpolate({
+      inputRange: [.7, 1],
+      outputRange: [0, 150],
+      extrapolate: 'clamp'
+    });
+
+    const inputStyle = {
+      opacity: this.state.animation,
+      height: editorHeightInterpolate
+    };
+
+    const opacityButtonInterpolate = this.state.animation.interpolate({
+      inputRange: [0, .5],
+      outputRange: [1, 0],
+      extrapolate: 'clamp'
+    });
+
+    const buttonStyle = {
+      opacity: opacityButtonInterpolate
+    };
 
     return (
       <View style={styles.container}>
         <KeyboardAvoidingView behavior='padding' style={styles.center}>
-          <Animated.View style={[styles.editor, { width: width - 40}]}>
+          <TouchableWithoutFeedback onPress={this.onPress}>
+            <Animated.View style={toolbarStyles}>
+              <Text style={styles.close}>Close</Text>
+            </Animated.View>
+          </TouchableWithoutFeedback>
+          <Animated.View style={[styles.editor, editorStyle]}>
             <View style={styles.bar}>
-              <Animated.View style={[styles.toolbar]}>
+              <Animated.View style={[styles.toolbar, toolbarStyles]}>
                 <Icon name='format-bold' color='#FFF' size={20} />
                 <Icon name='format-italic' color='#FFF' size={20} />
                 <Icon name='format-underline' color='#FFF' size={20} />
@@ -42,9 +101,10 @@ class EvolvingWriteButton extends Component {
               </Animated.View>
 
               <Animated.View
-                style={[StyleSheet.absoluteFill, styles.center]}
+                style={[StyleSheet.absoluteFill, styles.center, buttonStyle]}
+                pointerEvents={this.state.isOpen ? 'none' : 'auto'}
               >
-                <TouchableWithoutFeedback>
+                <TouchableWithoutFeedback onPress={this.onPress}>
                   <View>
                     <Text style={styles.buttonText}>Write</Text>
                   </View>
@@ -52,7 +112,7 @@ class EvolvingWriteButton extends Component {
               </Animated.View>
 
             </View>
-            <Animated.View style={[styles.lowerView]}>
+            <Animated.View style={[styles.lowerView, inputStyle]}>
               <TextInput
                 placeholder='Start writing ...'
                 multiline
@@ -107,6 +167,10 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     color: '#FFF'
+  },
+  close: {
+    color: '#2979FF',
+    marginBottom: 20
   }
 });
 
