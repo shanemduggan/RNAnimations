@@ -10,7 +10,8 @@ const animations = [
     'PhotoGridSharedElement',
     'AnimatedColorPicker',
     'FloatingActionButton',
-    'ApplicationIntro'
+    'ApplicationIntro',
+    'EvolvingWriteButton'
 ]
 
 export { animations }

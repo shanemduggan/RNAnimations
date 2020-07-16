@@ -20,6 +20,7 @@ import PhotoGridSharedElement from './screens/class/PhotoGridSharedElement';
 import AnimatedColorPicker from './screens/class/AnimatedColorPicker';
 import FloatingActionButton from './screens/class/FloatingActionButton';
 import ApplicationIntro from './screens/class/ApplicationIntro';
+import EvolvingWriteButton from './screens/class/EvolvingWriteButton';
 
 // TODO: add navigation and screen with links. each screen should have back button
 
@@ -53,6 +54,7 @@ function App() {
           <Stack.Screen name='AnimatedColorPicker' component={AnimatedColorPicker} />
           <Stack.Screen name='FloatingActionButton' component={FloatingActionButton} />
           <Stack.Screen name='ApplicationIntro' component={ApplicationIntro} />
+          <Stack.Screen name='EvolvingWriteButton' component={EvolvingWriteButton} />
 
           {/* // TODO: figure out which ones to keep and add to stack
           <Stack.Screen name='BoundPanResponder' component={BoundPanResponder} />
