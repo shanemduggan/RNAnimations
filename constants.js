@@ -12,7 +12,8 @@ const animations = [
     'FloatingActionButton',
     'ApplicationIntro',
     'EvolvingWriteButton',
-    'SocialCommentModal'
+    'SocialCommentModal',
+    'HorizontalParallax'
 ]
 
 export { animations }
