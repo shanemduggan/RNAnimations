@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, View, ScrollView } from "react-native";
 import Link from '../components/Link';
 
 import { animations } from '../constants';
@@ -8,7 +8,15 @@ class Home extends Component {
   render() {
     return (
       <View style={styles.container}>
-        { animations.reverse().map((name) => <Link key={name} text={name} screen={name} />)}
+        <ScrollView style={styles.container}>
+          { animations.reverse().map((name) => 
+            <Link 
+              key={name} 
+              text={name} 
+              screen={name} 
+            />
+          )}
+        </ScrollView>
       </View>
     );
   }

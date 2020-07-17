@@ -11,7 +11,8 @@ const animations = [
     'AnimatedColorPicker',
     'FloatingActionButton',
     'ApplicationIntro',
-    'EvolvingWriteButton'
+    'EvolvingWriteButton',
+    'SocialCommentModal'
 ]
 
 export { animations }

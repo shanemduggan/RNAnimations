@@ -21,6 +21,7 @@ import AnimatedColorPicker from './screens/class/AnimatedColorPicker';
 import FloatingActionButton from './screens/class/FloatingActionButton';
 import ApplicationIntro from './screens/class/ApplicationIntro';
 import EvolvingWriteButton from './screens/class/EvolvingWriteButton';
+import SocialCommentModal from './screens/class/SocialCommentModal';
 
 // TODO: add navigation and screen with links. each screen should have back button
 
@@ -55,6 +56,7 @@ function App() {
           <Stack.Screen name='FloatingActionButton' component={FloatingActionButton} />
           <Stack.Screen name='ApplicationIntro' component={ApplicationIntro} />
           <Stack.Screen name='EvolvingWriteButton' component={EvolvingWriteButton} />
+          <Stack.Screen name='SocialCommentModal' component={SocialCommentModal} />
 
           {/* // TODO: figure out which ones to keep and add to stack
           <Stack.Screen name='BoundPanResponder' component={BoundPanResponder} />
