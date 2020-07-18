@@ -48,6 +48,7 @@ class FloatingHearts extends Component {
       <View style={styles.container}>
         <TouchableWithoutFeedback onPress={this.handleAddHeart}>
           <View style={StyleSheet.absoluteFill}>
+            <Text style={{ justifyContent: 'center', alignItems: 'center'}}>Click the screen</Text>
             { this.state.hearts.map(({ animation, start }, index) => {
               const positionInterpolate = animation.interpolate({
                 inputRange: [0, height],

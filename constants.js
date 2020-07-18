@@ -14,7 +14,9 @@ const animations = [
     'EvolvingWriteButton',
     'SocialCommentModal',
     'HorizontalParallax',
-    'FloatingHearts'
+    'FloatingHearts',
+    'BouncingHeart',
+    'ExplodingHeart'
 ]
 
 export { animations }

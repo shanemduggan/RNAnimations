@@ -24,6 +24,8 @@ import EvolvingWriteButton from './screens/class/EvolvingWriteButton';
 import SocialCommentModal from './screens/class/SocialCommentModal';
 import HorizontalParallax from './screens/class/HorizontalParallax';
 import FloatingHearts from './screens/class/FloatingHearts';
+import BouncingHeart from './screens/class/BouncingHeart';
+import ExplodingHeart from './screens/class/ExplodingHeart';
 
 // TODO: add navigation and screen with links. each screen should have back button
 
@@ -61,6 +63,8 @@ function App() {
           <Stack.Screen name='SocialCommentModal' component={SocialCommentModal} />
           <Stack.Screen name='HorizontalParallax' component={HorizontalParallax} />
           <Stack.Screen name='FloatingHearts' component={FloatingHearts} />
+          <Stack.Screen name='BouncingHeart' component={BouncingHeart} />
+          <Stack.Screen name='ExplodingHeart' component={ExplodingHeart} />
 
           {/* // TODO: figure out which ones to keep and add to stack
           <Stack.Screen name='BoundPanResponder' component={BoundPanResponder} />
