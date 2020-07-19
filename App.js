@@ -26,6 +26,7 @@ import HorizontalParallax from './screens/class/HorizontalParallax';
 import FloatingHearts from './screens/class/FloatingHearts';
 import BouncingHeart from './screens/class/BouncingHeart';
 import ExplodingHeart from './screens/class/ExplodingHeart';
+import ExpandingNotifyInput from './screens/class/ExpandingNotifyInput';
 
 // TODO: add navigation and screen with links. each screen should have back button
 
@@ -65,6 +66,7 @@ function App() {
           <Stack.Screen name='FloatingHearts' component={FloatingHearts} />
           <Stack.Screen name='BouncingHeart' component={BouncingHeart} />
           <Stack.Screen name='ExplodingHeart' component={ExplodingHeart} />
+          <Stack.Screen name='ExpandingNotifyInput' component={ExpandingNotifyInput} />
 
           {/* // TODO: figure out which ones to keep and add to stack
           <Stack.Screen name='BoundPanResponder' component={BoundPanResponder} />

@@ -16,7 +16,8 @@ const animations = [
     'HorizontalParallax',
     'FloatingHearts',
     'BouncingHeart',
-    'ExplodingHeart'
+    'ExplodingHeart',
+    'ExpandingNotifyInput'
 ]
 
 export { animations }
